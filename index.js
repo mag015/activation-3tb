@@ -58,18 +58,28 @@ client.on('message', async message => {
 
       // رسالة في الشات
       message.channel.send(new Discord.MessageEmbed()
-        .setDescription(`** عـزيـزنـا الـمـواطـن : ${member}
-تـم تفعـيلك فـي سيرفر  
-نـرجـو منك الإلـتزام بالقـوانـين والأنظمة داخل الـسيرفر **`)
-        .setImage(dastarline)
-        .setColor('RANDOM')
-      );
+  .setDescription(`** عـزيـزنـا المـواطـن : ${member}
+
+
+تـم تـفـعـيـلـك مـن قـبـل الاداري : ${message.author}
+نـتـمـنـى مـنـك الإلـتـزام فـي قـوانـيـن ‘Gulf Niat’
+
+' ادارة قـولـف نـايـت تـحـت خـدمـتـك دائـمـا وابـدا '**`)
+  .setImage(dastarline)
+  .setColor('RANDOM')
+);
+
 
       // رسالة في الخاص
       const embedDM = new Discord.MessageEmbed()
         .setColor('RANDOM')
-        .setDescription(`تـم تفعـيلك فـي سيرفر  
-نـرجـو منك الإلـتزام بالقـوانـين والأنظمة داخل الـسيرفر`)
+        .setDescription(`عـزيـزنـا المـواطـن : ${member}
+
+''' تـم تفـعـيـلـك فـي سـيـرفـر قـولـف نـايـت 
+
+نـتـمـنـى لـك الـسـعـاده دائـمـا '''
+
+' ادارة قـولـف نـايـت تـحـت خـدمـتـك دائـمـا وابـدا '`)
         .setImage(dastarline);
 
       member.send(embedDM).catch(() => {});
@@ -82,5 +92,5 @@ client.on('message', async message => {
 });
 
 //////////////////////////////////////////////////////////////////////////////////////////
-client.login("توكن_البوت_بتاعك");
+client.login("MTM3NTIzNjk4MzEzMTIxMzg5NA.GGDxXP.WIFI4USaBcmJHnErNaEiK0eEC2sDP31DkDK5vc");
 //////////////////////////////////////////////////////////////////////////////////////////
